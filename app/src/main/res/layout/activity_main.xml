@@ -9,14 +9,15 @@
     tools:context="carlos.myapplication.MainActivity">
 
 
-    <TextView android:text="Ingrese su información personal"
-        android:layout_margin="20dp"
-        android:textColor="@color/colorPrimaryDark"
-        android:textAllCaps="true"
-        android:textSize="24sp"
-        android:textAlignment="center"
+    <TextView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Ingrese su información personal"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="24sp" />
 
 
     <LinearLayout
@@ -33,7 +34,8 @@
 
         <EditText android:id="@+id/et_nombres"
             android:maxLines="1"
-            android:inputType="text"
+            android:inputType="textCapWords"
+            android:digits=" Aabcdefghijklmnñopqrstuvwxyz"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
