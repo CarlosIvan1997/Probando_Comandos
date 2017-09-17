@@ -7,20 +7,16 @@
     android:layout_height="match_parent"
     tools:context="carlos.myapplication.MainActivity">
 
-    <LinearLayout
+
+    <TextView android:text="Ingrese su información personal"
         android:layout_margin="20dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textAllCaps="true"
+        android:textSize="24sp"
+        android:textAlignment="center"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content" />
 
-        <TextView android:text="Ingrese su información personal"
-            android:textColor="@color/colorPrimaryDark"
-            android:textAllCaps="true"
-            android:textSize="24sp"
-            android:textAlignment="center"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-    </LinearLayout>
 
     <LinearLayout
         android:layout_marginTop="5dp"
@@ -36,6 +32,7 @@
             />
 
         <EditText android:id="@+id/et_nombres"
+            android:maxLines="1"
             android:inputType="text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
@@ -53,6 +50,7 @@
             android:textColor="@color/colorAccent"/>
 
         <EditText android:id="@+id/et_apellidos"
+            android:maxLines="1"
             android:inputType="text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
@@ -71,6 +69,7 @@
             android:layout_height="wrap_content" />
 
         <EditText android:id="@+id/et_dia"
+            android:maxLength="2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:inputType="number"
@@ -84,6 +83,7 @@
             android:layout_height="wrap_content" />
 
         <EditText android:id="@+id/et_mes"
+            android:maxLength="2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:inputType="number"
@@ -97,6 +97,7 @@
             android:layout_height="wrap_content" />
 
         <EditText android:id="@+id/et_anho"
+            android:maxLength="4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:inputType="number"
@@ -124,6 +125,7 @@
             android:layout_height="wrap_content" />
 
         <EditText android:id="@+id/et_correo"
+            android:maxLines="1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textEmailAddress"/>
@@ -140,6 +142,7 @@
             android:layout_height="wrap_content" />
 
         <EditText android:id="@+id/et_usuario"
+            android:maxLines="1"
             android:inputType="text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
@@ -156,19 +159,15 @@
             android:layout_height="wrap_content" />
 
         <EditText android:id="@+id/et_password"
+            android:maxLines="1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPassword"/>
 
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_margin="10dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-
         <Button
+            android:layout_margin="10dp"
             android:id="@+id/btn_aceptar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -176,7 +175,5 @@
             android:text="ACEPTAR"
             android:textColor="@color/colorPrimaryDark"
             android:textSize="48sp" />
-
-    </LinearLayout>
 
 </LinearLayout>
